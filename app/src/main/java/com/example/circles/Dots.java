@@ -12,10 +12,14 @@ public class Dots {
     float y;
     Paint paint;
     float radius;
-    Dots(float x, float y, float radius, Paint paint){
+    float number;
+    boolean exist;
+    Dots(float x, float y, float radius, Paint paint, float number, boolean exist){
         this.x=x;
         this.y=y;
         this.radius = radius;
         this.paint = paint;
+        this.number = number;
+        this.exist = exist;
     }
 }
