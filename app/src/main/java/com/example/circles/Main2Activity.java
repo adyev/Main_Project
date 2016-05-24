@@ -46,13 +46,26 @@ public class Main2Activity extends AppCompatActivity  {
         @Override
         protected void onDraw(Canvas canvas){
             win_check=true;
+            Lvl lvls[] = new Lvl[25];
+            for(int i=0;i<25;i++){
+                for(int i2=0;i2<25;i2++){
+                    mass[i][i2]=1;
+                }
+            }
+            for(int i=0;i<25;i++){
+                lvls[i]= new Lvl(mass, 0);
+            }
+            for(int i=0;i<25;i++){
+                for(int i2=0;i2<25;i2++){
+                    mass[i][i2]=0;
+                }
+            }
             //заполнение уровней
             mass[20][2]=1; mass[2][20]=1;
             mass[5][9]=1;  mass[9][5]=1;
             mass[5][24]=1; mass[24][5]=1;
             mass[9][20]=1; mass[20][9]=1;
             mass[24][2]=1; mass[2][24]=1;
-            Lvl lvls[] = new Lvl[25];
             lvls[0]=new Lvl(mass, 5);
             for(int i=0;i<25;i++){
                 for(int i2=0;i2<25;i2++){
@@ -84,6 +97,123 @@ public class Main2Activity extends AppCompatActivity  {
             mass[20][14]=1; mass[14][20]=1;
             mass[10][14]=1; mass[14][10]=1;
             lvls[2]=new Lvl(mass, 2);
+            for(int i=0;i<25;i++){
+                for(int i2=0;i2<25;i2++){
+                    mass[i][i2]=0;
+                }
+            }
+            mass[15][11]=1; mass[11][15]=1;
+            mass[11][2]=1; mass[2][11]=1;
+            mass[13][2]=1; mass[2][13]=1;
+            mass[19][13]=1; mass[13][19]=1;
+            mass[11][13]=1; mass[13][11]=1;
+            mass[13][22]=1; mass[22][13]=1;
+            mass[11][22]=1; mass[22][11]=1;
+            lvls[3]= new Lvl(mass, 14);
+            for(int i=0;i<25;i++){
+                for(int i2=0;i2<25;i2++){
+                    mass[i][i2]=0;
+                }
+            }
+            mass[15][17]=1; mass[17][15]=1;
+            mass[15][23]=1; mass[23][15]=1;
+            mass[23][14]=1; mass[14][23]=1;
+            mass[17][14]=1; mass[14][17]=1;
+            mass[17][12]=1; mass[12][17]=1;
+            mass[12][11]=1; mass[11][12]=1;
+            mass[12][8]=1; mass[8][12]=1;
+            mass[11][2]=1; mass[2][11]=1;
+            mass[2][8]=1; mass[8][2]=1;
+            lvls[4]= new Lvl(mass, 9);
+            for(int i=0;i<25;i++){
+                for(int i2=0;i2<25;i2++){
+                    mass[i][i2]=0;
+                }
+            }
+            mass[2][6]=1; mass[6][2]=1;
+            mass[2][9]=1; mass[9][2]=1;
+            mass[6][9]=1; mass[9][6]=1;
+            mass[6][12]=1; mass[12][6]=1;
+            mass[9][12]=1; mass[12][9]=1;
+            mass[9][19]=1; mass[19][9]=1;
+            mass[12][15]=1; mass[15][12]=1;
+            mass[12][19]=1; mass[19][12]=1;
+            mass[15][20]=1; mass[20][15]=1;
+            mass[20][19]=1; mass[19][20]=1;
+            mass[20][23]=1; mass[23][20]=1;
+            mass[23][19]=1; mass[19][23]=1;
+            lvls[5]= new Lvl(mass, 12);
+            for(int i=0;i<25;i++){
+                for(int i2=0;i2<25;i2++){
+                    mass[i][i2]=0;
+                }
+            }
+            mass[2][16]=1; mass[16][2]=1;
+            mass[2][8]=1; mass[8][2]=1;
+            mass[8][19]=1; mass[19][8]=1;
+            mass[8][16]=1; mass[16][8]=1;
+            mass[16][19]=1; mass[19][16]=1;
+            mass[16][23]=1; mass[23][16]=1;
+            mass[16][21]=1; mass[21][16]=1;
+            mass[16][20]=1; mass[20][16]=1;
+            mass[19][23]=1; mass[23][19]=1;
+            mass[20][21]=1; mass[21][20]=1;
+            lvls[6]= new Lvl(mass, 10);
+            for(int i=0;i<25;i++){
+                for(int i2=0;i2<25;i2++){
+                    mass[i][i2]=0;
+                }
+            }
+            mass[1][4]=1; mass[4][1]=1;
+            mass[1][7]=1; mass[7][1]=1;
+            mass[4][7]=1; mass[7][4]=1;
+            mass[7][10]=1; mass[10][7]=1;
+            mass[4][12]=1; mass[12][4]=1;
+            mass[4][23]=1; mass[23][4]=1;
+            mass[10][12]=1; mass[12][10]=1;
+            mass[12][23]=1; mass[23][12]=1;
+            lvls[7]= new Lvl(mass, 10);
+            for(int i=0;i<25;i++){
+                for(int i2=0;i2<25;i2++){
+                    mass[i][i2]=0;
+                }
+            }
+            mass[0][14]=1; mass[14][0]=1;
+            mass[10][4]=1; mass[4][10]=1;
+            mass[0][24]=1; mass[24][0]=1;
+            mass[0][10]=1; mass[10][0]=1;
+            mass[4][20]=1; mass[20][4]=1;
+            mass[14][20]=1; mass[20][14]=1;
+            mass[24][10]=1; mass[10][24]=1;
+
+            lvls[8]= new Lvl(mass, 10);
+            for(int i=0;i<25;i++){
+                for(int i2=0;i2<25;i2++){
+                    mass[i][i2]=0;
+                }
+            }
+            mass[2][6]=1; mass[6][2]=1;
+            mass[2][8]=1; mass[8][2]=1;
+            mass[2][11]=1; mass[11][2]=1;
+            mass[2][13]=1; mass[13][2]=1;
+            mass[6][11]=1; mass[11][6]=1;
+            mass[6][17]=1; mass[17][6]=1;
+            mass[8][13]=1; mass[13][8]=1;
+            mass[8][17]=1; mass[17][8]=1;
+            mass[11][15]=1; mass[15][11]=1;
+            mass[11][17]=1; mass[17][11]=1;
+            mass[13][17]=1; mass[17][13]=1;
+            mass[13][19]=1; mass[19][13]=1;
+            mass[17][21]=1; mass[21][17]=1;
+            mass[17][23]=1; mass[23][17]=1;
+            mass[15][21]=1; mass[21][15]=1;
+            mass[19][23]=1; mass[23][19]=1;
+            lvls[9]=new Lvl(mass, 16);
+            for(int i=0;i<25;i++){
+                for(int i2=0;i2<25;i2++){
+                    mass[i][i2]=0;
+                }
+            }
             float x = 100, y = 100;
             Paint p = new Paint();
             p.setColor(Color.RED);
@@ -130,6 +260,8 @@ public class Main2Activity extends AppCompatActivity  {
                 for (int i = 0; i < lines.size(); i++) {
                     Lines perline = lines.get(i);
                     canvas.drawLine(perline.x1, perline.y1, perline.x2, perline.y2, perline.paint);
+
+
                 }
                 //отрисовка линий уровня на поле
                 float per = 0, Xper1 = 0, Yper1 = 0, Xper2 = 0, Yper2 = 0;
@@ -238,7 +370,7 @@ public class Main2Activity extends AppCompatActivity  {
                 canvas.drawCircle(getWidth() / 2, getHeight() / 2, 100, p);
                 p.setColor(Color.WHITE);
                 p.setTextSize(30);
-                canvas.drawText("You won", getWidth()/2-50, getHeight() / 2, p);
+                canvas.drawText("You win", getWidth()/2-50, getHeight() / 2, p);
                 if ((Math.abs(x2 - getWidth() / 2) <= 100) &&
                         (Math.abs(y2 - getHeight() / 2) <= 100))
                     finish();
